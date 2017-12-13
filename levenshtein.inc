@@ -30,13 +30,11 @@ levenshtein(a[], b[]) {
 		return aLength;
 	}
 
-	/* initialize the vector. */
 	while (index < aLength) {
-	cache[index] = index + 1;
-	index++;
+		cache[index] = index + 1;
+		index++;
 	}
 
-	/* Loop. */
 	while (bIndex < bLength) {
 		code = b[bIndex];
 		result = distance = bIndex++;
