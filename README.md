@@ -12,8 +12,15 @@ Simply add to your `pawn.json` and include:
 }
 ```
 
+The function `levenshtein` simply takes two strings and returns a score that indicates the difference.
+
 ```pawn
 #include <levenshtein>
+
+main() {
+    new difference = levenshtein("these strings are similar, but not the same", "these strings ar similar, but no the same");
+    printf("%d", difference);
+}
 ```
 
 ## Testing
