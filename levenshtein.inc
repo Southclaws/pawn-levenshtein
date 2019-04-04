@@ -6,7 +6,7 @@
 #include <string>
 
 
-levenshtein(a[], b[]) {
+levenshtein(const a[], const b[]) {
 	new
 		aLength = strlen(a),
 		bLength = strlen(b),
